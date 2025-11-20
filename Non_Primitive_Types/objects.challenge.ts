@@ -21,7 +21,12 @@ Product Headphones (ID: 3) costs $150
 Product Mouse (ID: 4) costs $30
 */
 
-type Product = { id: number; name: string; price: number; inStock: boolean };
+interface Product {
+  id: number;
+  name: string;
+  price: number;
+  inStock: boolean;
+}
 
 const products: Product[] = [
   { id: 1, name: "Laptop", price: 1200, inStock: true },
